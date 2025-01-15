@@ -2,7 +2,7 @@
 # maximum of 20 tickets can be sold. The user will be asked how many tickets to buy. After selecting the amount
 # of tickets, the amount of remaining tickets will be displayed, until all tickets have been sold.
 
-# Initialize variables.
+# Initialize global variables.
 remaining_tickets = 20
 total_buyers = 0
 
