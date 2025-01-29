@@ -41,10 +41,9 @@ def spam_dictionary():
 def calc_spam_score(user_email, spam_dict):
     spam_score = 0 # Initialize variable to count the email's spam score.
     spam_words = [] # Creates a list to store the spam words from the email.
-    make_email_lower = user_email.lower() # Takes the user's email and makes everything lowercase.
     # for loop to find spam words, add to score, and add to list.
     for spamWord in spam_dict:
-        if spamWord.lower() in make_email_lower:
+        if spamWord in user_email.lower():   # Takes the user's email and makes everything lowercase.
             spam_score += 1
             spam_words.append(spamWord)
     return spam_score, spam_words
